@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon_io/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/styles.css" />
+        <title>Chill with MinhTriet</title>
+    </head>
+    <body>
+        <div class="music-player">
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <!-- Header -->
+                <header>
+                    <h4>Now playing:</h4>
+                    <h2>Die For You</h2>
+                </header>
+
+                <!-- CD -->
+                <div class="cd">
+                    <div
+                        class="cd-thumb"
+                        style="
+                            background-image: url('https://i.pinimg.com/564x/fc/99/d9/fc99d9b2e4ea018f042f6138ffce8092.jpg');
+                        "
+                    ></div>
+                    <div class="cell"></div>
+                    <div class="core"></div>
+                </div>
+
+                <!-- Control -->
+                <div class="control">
+                    <div class="btn btn-repeat">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fa-solid fa-pause icon-pause"></i>
+                        <i class="fa-solid fa-play icon-play"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                </div>
+
+                <input
+                    type="range"
+                    value="0"
+                    step="1"
+                    min="0"
+                    max="100"
+                    id="progress"
+                    class="progress"
+                />
+
+                <audio id="audio" src=""></audio>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist"></div>
+
+            <div class="menu">
+                <h3><i>Keyboard Controls</i></h3>
+                <h4>N to Next</h4>
+                <h4>V to preV</h4>
+                <h4>S to Shuffle</h4>
+                <h4>P to rePeat</h4>
+                <h4>--> to Forward</h4>
+                <h4><-- to Backward</h4>
+            </div>
+        </div>
+
+        <script src="./assets/app.js"></script>
+    </body>
+</html>
