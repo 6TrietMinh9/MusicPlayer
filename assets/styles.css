@@ -264,3 +264,9 @@ header h2 {
     margin-top: 8px;
     font-size: 16px;
 }
+
+@media screen and (max-width: 1250px) {
+    .menu {
+        display: none;
+    }
+}
